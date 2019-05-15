@@ -1,10 +1,11 @@
 import React from 'react';
-//import './App.css';
+import './InputComponent.css'
+
 function InputComponent(props) {
   return (
-    <form onSubmit={props.getEvents}>
-      <input type='text' name='city' placeholder='City'/>
-      <button>Search</button>
+    <form className='form-holder' onSubmit={props.getEvents}>
+      <input className='input-holder'  type='text' name='city' placeholder='City'/>
+      <button className='button' >Search</button>
     </form>
   );
 }
