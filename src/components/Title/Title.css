@@ -8,17 +8,17 @@
   justify-content: center;
   box-sizing: border-box;
   padding: 60px;
-  background: linear-gradient(35deg, 	#569EFB, #0870F9, rgb(27, 90, 172));
+  /* background: linear-gradient(35deg, 	#569EFB, #0870F9, rgb(27, 90, 172)); */
   font-family: 'Lora', serif;
 }
 .title {
-  color: white;
+  /* color: white; */
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 .subtitle {
-  color: white;
+  /* color: white; */
     display: flex;
     justify-content: center;
     padding: 20px;

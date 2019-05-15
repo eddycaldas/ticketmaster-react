@@ -1,10 +1,9 @@
 import React from 'react';
-//import './App.css';
+import './Details.css';
 
 function Details(props) {
   return (
-    <div>
-    
+    <div className='show-container'>
       {props.toShow}
     </div>
   );

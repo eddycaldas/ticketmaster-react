@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-//import './App.css';
+import './App.css';
+
 import Title from './components/Title/Title'
 import InputComponent from './components/InputComponent/InputComponent'
 import Details from './components/Details/Details'
@@ -22,12 +23,12 @@ class App extends Component {
      }).then(data => {
        let myResults = data._embedded.events.map((info, index) => {
          return(
-           <div key={index}>
-             <img src={info.images[0].url} alt='pic'/>
-             <div>{info.name}</div>
-             <div>Date: {info.dates['start'].localDate}</div>
-             <div>{info._embedded.venues[0].name}</div>
-             <div><a href={info.url} >Purchase a Ticket</a></div>
+           <div className='container-holder' key={index}>
+             <img width={319} height={160} className='image-holder'src={info.images[6].url} alt='pic'/>
+             <div class='common'>{info.name}</div>
+             <div class='common'>Date: {info.dates['start'].localDate}</div>
+             <div class='common'>{info._embedded.venues[0].name}</div>
+             <div class='common'><a href={info.url} target="_blank">Purchase a Ticket</a></div>
            </div>
          )
        })
