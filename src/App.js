@@ -15,8 +15,7 @@ class App extends Component {
    events = (e) => {
      e.preventDefault()
      const city = e.target[0].value
-     const API_URL = API + city
-     
+     const API_URL = API + city   
      fetch(API_URL)
      .then(results => {
        return results.json()
@@ -35,21 +34,15 @@ class App extends Component {
        this.setState({
          myResults: myResults
        })
-
-     })
-     
+     }) 
    }
-   
-   
-   
    
   render() {
     return (
       <div>
         <Title />
         <InputComponent getEvents={this.events}/>
-        {this.state.myResults}
-        <Details />
+        <Details toShow={this.state.myResults}/>
       </div>
     );
   }

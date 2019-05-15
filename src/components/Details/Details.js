@@ -5,7 +5,7 @@ function Details(props) {
   return (
     <div>
     
-      Details component
+      {props.toShow}
     </div>
   );
 }
